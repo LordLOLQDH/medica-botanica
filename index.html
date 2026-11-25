@@ -1,77 +1,19 @@
 <!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f8f4">
-  <meta name="description" content="MEDICA BOTANICA – ein botanisch-pharmazeutisches Konzeptprojekt mit fünf dokumentierten Präparateideen.">
-  <title>MEDICA BOTANICA — Botanische Präparatekunde</title>
-  <style>
-    :root{--paper:#f8f8f4;--ink:#20251f;--muted:#687066;--green:#304c39;--line:#d9ded5;--soft:#eef1e9;--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
-    a{color:inherit}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
-    .topline{border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-    .topline .wrap{display:flex;justify-content:space-between;padding:13px 0}
-    header{border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-family:var(--serif);font-size:22px;letter-spacing:.12em;text-decoration:none}.brand small{display:block;font:10px var(--sans);letter-spacing:.22em;color:var(--muted);margin-top:2px}
-    nav{display:flex;gap:27px}nav a{text-decoration:none;font-size:12px;color:var(--muted)}nav a:hover{color:var(--green)}
-    .hero{padding:105px 0 92px;display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
-    .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:700}
-    h1{font:clamp(48px,7vw,86px)/.98 var(--serif);font-weight:400;letter-spacing:-.045em;margin:24px 0}
-    .hero p{max-width:580px;color:var(--muted);font-size:16px}
-    .hero-mark{height:330px;border:1px solid var(--line);display:grid;place-items:center;position:relative;background:linear-gradient(145deg,#f2f3ed,#fafaf7)}
-    .seal{width:205px;height:205px;border:1px solid #84917f;border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--green);font-family:var(--serif);position:relative}
-    .seal:before,.seal:after{content:"";position:absolute;border:1px solid #aeb8a8;border-radius:50%;inset:9px}.seal:after{inset:17px}
-    .seal span{font-size:37px;line-height:1}.seal small{font:9px var(--sans);letter-spacing:.2em;display:block;margin-top:10px}
-    .section{padding:75px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
-    h2{font:40px/1.1 var(--serif);font-weight:400;margin:10px 0 0}.section-head p{max-width:420px;color:var(--muted);font-size:13px;margin:0}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-    .item{border:1px solid var(--line);padding:27px 28px 30px;background:rgba(255,255,255,.38);min-height:190px;transition:background .2s,border-color .2s}
-    .item:hover{background:#fff;border-color:#aeb9aa}.num{font:11px var(--sans);letter-spacing:.18em;color:var(--green)}
-    .item h3{font:25px/1.2 var(--serif);font-weight:400;margin:20px 0 8px}.latin{font:italic 13px var(--serif);color:var(--muted)}
-    .item p{font-size:13px;color:var(--muted);margin:14px 0 0;max-width:470px}
-    .note{background:var(--soft);padding:30px 34px;border-left:2px solid var(--green);display:grid;grid-template-columns:180px 1fr;gap:25px}
-    .note strong{font:21px var(--serif);font-weight:400;color:var(--green)}.note p{margin:0;color:#535d51;font-size:13px}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p{color:var(--muted);font-size:14px;margin-top:0}
-    footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:11px;letter-spacing:.04em}
-    footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:720px){.wrap{width:min(100% - 32px,560px)}.topline .wrap span:last-child{display:none}.nav{height:auto;padding:18px 0;align-items:flex-start;flex-direction:column}nav{gap:18px;flex-wrap:wrap}.hero{padding:65px 0;grid-template-columns:1fr;gap:35px}.hero-mark{height:245px}.seal{transform:scale(.82)}.section{padding:55px 0}.section-head{display:block}.section-head p{margin-top:18px}.grid{grid-template-columns:1fr}.note{grid-template-columns:1fr;gap:10px}.about{grid-template-columns:1fr;gap:15px}h2{font-size:34px}}
-  </style>
-</head>
-<body>
-  <div class="topline"><div class="wrap"><span>Botanische Präparatekunde</span><span>Dokumentation · Konzept · Gestaltung</span></div></div>
-  <header><div class="wrap nav">
-    <a class="brand" href="#start">MEDICA BOTANICA<small>STUDIUM NATURAE</small></a>
-    <nav aria-label="Hauptnavigation"><a href="#praeparate">Präparate</a><a href="#grundsaetze">Einordnung</a><a href="#projekt">Das Projekt</a></nav>
-  </div></header>
-  <main id="start">
-    <section class="wrap hero">
-      <div><div class="eyebrow">Botanik · Rezepturgeschichte · Gestaltung</div>
-        <h1>Die Natur.<br>In ihrer<br>Komposition.</h1>
-        <p>MEDICA BOTANICA ist ein unabhängiges Konzeptprojekt an der Schnittstelle von Pflanzenkunde, klassischer Präparateästhetik und sorgfältiger Dokumentation.</p>
-      </div>
-      <div class="hero-mark" aria-label="Abstraktes botanisches Signet"><div class="seal"><div><span>✳</span><small>MEDICA<br>BOTANICA</small></div></div></div>
-    </section>
-    <section class="section" id="praeparate"><div class="wrap">
-      <div class="section-head"><div><div class="eyebrow">01 / Präparateübersicht</div><h2>Die Kollektion</h2></div>
-        <p>Fünf Präparatekonzepte, benannt in der Tradition der pharmazeutischen Fachsprache. Die Übersicht beschreibt ihre gestalterische und konzeptionelle Ausrichtung.</p></div>
-      <div class="grid">
-        <article class="item"><div class="num">01 — PECTORALIA</div><h3>Unguentum Pectorale Aethereum</h3><div class="latin">Das ätherische Brustpräparat</div><p>Ein klassisch benanntes Salbenkonzept mit Schwerpunkt auf einer aromatischen, botanisch inspirierten Duftkomposition.</p></article>
-        <article class="item"><div class="num">02 — HERBARIUM</div><h3>Balsamum Herbarum Pectorale</h3><div class="latin">Der pflanzliche Brustbalsam</div><p>Ein Balsamkonzept, das die traditionelle Formensprache pflanzlicher Zubereitungen aufgreift.</p></article>
-        <article class="item"><div class="num">03 — RUBEFACIENTIA</div><h3>Unguentum Rubefaciens</h3><div class="latin">Das rubefazierende Salbenkonzept</div><p>Ein historisch geprägter Fachname, der in diesem Projekt als Gegenstand botanischer und pharmazeutischer Dokumentation geführt wird.</p></article>
-        <article class="item"><div class="num">04 — THERMOPNOE</div><h3>Balsamum Thermopnoe</h3><div class="latin">Das Wärmeerlebnis</div><p>Ein eigenständiges Balsamkonzept rund um die gestalterische Idee einer warm empfundenen Duft- und Sinneskomposition.</p></article>
-        <article class="item"><div class="num">05 — CRYOPNOE</div><h3>Balsamum Cryopnoe</h3><div class="latin">Das Frischeerlebnis</div><p>Das Gegenstück zum Thermopnoe-Konzept: eine Komposition, deren Leitidee Frische und Kühle ist.</p></article>
-      </div>
-    </div></section>
-    <section class="section" id="grundsaetze"><div class="wrap">
-      <div class="section-head"><div><div class="eyebrow">02 / Verantwortungsvolle Einordnung</div><h2>Dokumentation statt Heilsversprechen</h2></div></div>
-      <div class="note"><strong>Wichtiger Hinweis</strong><p>MEDICA BOTANICA ist ein Konzept- und Dokumentationsprojekt. Die hier vorgestellten Namen und Beschreibungen sind keine Arzneimittelzulassungen, keine medizinischen Empfehlungen und keine Aussage über eine nachgewiesene Wirkung. Die Website enthält bewusst keine Herstellungsanleitungen oder Anwendungsempfehlungen. Selbst hergestellte Hautpräparate können Reizungen, Allergien oder andere Schäden verursachen und sollten nicht ohne fachkundige Prüfung verwendet oder weitergegeben werden.</p></div>
-    </div></section>
-    <section class="section" id="projekt"><div class="wrap about">
-      <div><div class="eyebrow">03 / Über das Projekt</div><h2>Eine Studie in Form und Sprache.</h2></div>
-      <div><p>Das Projekt MEDICA BOTANICA untersucht, wie sich botanische Themen, klassische pharmazeutische Nomenklatur und eine zurückhaltende visuelle Identität in einer zusammenhängenden Dokumentation darstellen lassen.</p><p>Die Gestaltung folgt bewusst einer ruhigen, papierartigen Ästhetik: helle Flächen, dunkle Schrift und sparsame grüne Akzente.</p></div>
-    </div></section>
-  </main>
-  <footer><div class="wrap"><span>MEDICA BOTANICA</span><span>Konzeptprojekt · Keine medizinische Beratung</span></div></footer>
-</body>
-</html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f5f7"><meta name="description" content="MEDICA BOTANICA — fünf eigenständige Präparatekonzepte."><title>MEDICA BOTANICA — Präparatekollektion</title>
+<style>
+:root{--bg:#f4f5f7;--white:#fff;--ink:#10151d;--muted:#68717e;--line:#dce1e8;--blue:#234cda;--navy:#101a2b;--sans:Arial,Helvetica,sans-serif;--serif:Georgia,"Times New Roman",serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 56px));margin:auto}.top{height:38px;background:var(--navy);color:#d8dfeb;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}header{background:white;border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:18px;font-weight:800;letter-spacing:.13em}.brand span{display:block;font-size:9px;font-weight:500;color:var(--muted);letter-spacing:.25em;margin-top:3px}nav{display:flex;gap:30px;font-size:12px;color:#525d6c}nav a:hover{color:var(--blue)}.hero{padding:100px 0 92px;display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center}.kicker{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}h1{font-size:clamp(48px,7vw,88px);line-height:.96;letter-spacing:-.065em;margin:22px 0 26px;font-weight:750;max-width:700px}.intro{font-size:16px;color:var(--muted);max-width:540px}.hero-panel{min-height:340px;background:var(--navy);color:white;padding:34px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.hero-panel:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #40516b;border-radius:50%;right:-65px;top:10px;box-shadow:0 0 0 28px #ffffff08,0 0 0 58px #ffffff06}.panel-label{font-size:10px;letter-spacing:.2em;color:#aebbd0;text-transform:uppercase}.panel-title{font:36px/1.08 var(--serif);max-width:270px;position:relative;z-index:1}.panel-foot{font-size:11px;color:#b9c4d5;letter-spacing:.08em;position:relative;z-index:1}.section{padding:72px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.section-head h2{font-size:36px;letter-spacing:-.04em;margin:9px 0 0}.section-head p{font-size:13px;color:var(--muted);max-width:430px;margin:0}.products{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.product{background:white;border:1px solid var(--line);padding:27px 28px 25px;min-height:230px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}.product:hover{border-color:var(--blue);transform:translateY(-2px)}.product-top{display:flex;justify-content:space-between;color:var(--blue);font-size:10px;font-weight:700;letter-spacing:.15em}.product h3{font:26px/1.18 var(--serif);font-weight:400;margin:24px 0 5px}.subtitle{font-size:12px;color:var(--muted)}.product-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:24px;font-size:11px;font-weight:700}.arrow{color:var(--blue);font-size:18px}.statement{background:#e9edf4;padding:34px 38px;display:grid;grid-template-columns:210px 1fr;gap:30px}.statement h3{font-size:17px;margin:0}.statement p{font-size:13px;color:#566171;margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about h2{font:38px/1.1 var(--serif);margin:12px 0}.about p{font-size:14px;color:var(--muted);margin-top:0}footer{background:var(--navy);color:#c3ccda;padding:28px 0;font-size:10px;letter-spacing:.1em}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.wrap{width:calc(100% - 34px)}.top .wrap span:last-child{display:none}.nav{height:auto;padding:20px 0;align-items:flex-start;gap:18px;flex-direction:column}nav{gap:17px;flex-wrap:wrap}.hero{padding:66px 0;grid-template-columns:1fr;gap:30px}.hero-panel{min-height:250px}.section{padding:52px 0}.section-head{display:block}.section-head p{margin-top:15px}.products{grid-template-columns:1fr}.statement{grid-template-columns:1fr;gap:12px}.about{grid-template-columns:1fr;gap:18px}.section-head h2{font-size:31px}}
+</style></head><body>
+<div class="top"><div class="wrap"><span>Botanical preparations / Collection 01</span><span>Independent concept project</span></div></div>
+<header><div class="wrap nav"><a class="brand" href="/">MEDICA BOTANICA<span>PREPARATIONS & BOTANICAL STUDIES</span></a><nav><a href="#kollektion">Kollektion</a><a href="#profil">Projektprofil</a><a href="#hinweis">Hinweise</a></nav></div></header>
+<main><section class="wrap hero"><div><div class="kicker">Eine Kollektion in fünf Positionen</div><h1>Botanische Ideen.<br>Klar formuliert.</h1><p class="intro">MEDICA BOTANICA verbindet klassische Präparatebezeichnungen mit einer zeitgemäßen, sachlichen Präsentation. Jedes Konzept erhält eine eigene Dokumentation mit Beschreibung und transparenter Inhaltsstoffübersicht.</p></div><div class="hero-panel"><div class="panel-label">MEDICA BOTANICA / 001—005</div><div class="panel-title">Form. Inhalt.<br>Charakter.</div><div class="panel-foot">FÜNF PRÄPARATEKONZEPTE · EINE IDENTITÄT</div></div></section>
+<section class="section" id="kollektion"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / Die Kollektion</div><h2>Präparate im Überblick</h2></div><p>Jede Produktseite führt die jeweilige Idee, ihre botanische Ausrichtung und die vorgesehenen Inhaltsstoffe separat auf.</p></div><div class="products">
+<a class="product" href="produkte/unguentum-pectorale-aethereum/"><div class="product-top"><span>01 / PECTORAL</span><span>01—05</span></div><h3>Unguentum Pectorale Aethereum</h3><div class="subtitle">Aromatisches Brustbalsam-Konzept</div><div class="product-bottom"><span>PRODUKTDETAILS</span><span class="arrow">↗</span></div></a>
+<a class="product" href="produkte/balsamum-herbarum-pectorale/"><div class="product-top"><span>02 / HERBAL</span><span>02—05</span></div><h3>Balsamum Herbarum Pectorale</h3><div class="subtitle">Klassisches Kräuterbalsam-Konzept</div><div class="product-bottom"><span>PRODUKTDETAILS</span><span class="arrow">↗</span></div></a>
+<a class="product" href="produkte/unguentum-rubefaciens/"><div class="product-top"><span>03 / RUBEFACIENT</span><span>03—05</span></div><h3>Unguentum Rubefaciens</h3><div class="subtitle">Wärmendes Balsam-Konzept</div><div class="product-bottom"><span>PRODUKTDETAILS</span><span class="arrow">↗</span></div></a>
+<a class="product" href="produkte/balsamum-thermopnoe/"><div class="product-top"><span>04 / THERMAL</span><span>04—05</span></div><h3>Balsamum Thermopnoe</h3><div class="subtitle">Wärme- und Frischekonzept</div><div class="product-bottom"><span>PRODUKTDETAILS</span><span class="arrow">↗</span></div></a>
+<a class="product" href="produkte/balsamum-cryopnoe/"><div class="product-top"><span>05 / COOLING</span><span>05—05</span></div><h3>Balsamum Cryopnoe</h3><div class="subtitle">Kühlendes Frischekonzept</div><div class="product-bottom"><span>PRODUKTDETAILS</span><span class="arrow">↗</span></div></a>
+</div></div></section>
+<section class="section" id="profil"><div class="wrap about"><div><div class="kicker">02 / Projektprofil</div><h2>Eine klare Sprache für botanische Konzepte.</h2></div><div><p>MEDICA BOTANICA ist ein unabhängiges Konzeptprojekt. Im Mittelpunkt stehen Produktidentität, botanische Inhaltsstoffe, sorgfältige Beschreibung und eine konsistente visuelle Sprache.</p><p>Die Gestaltung orientiert sich an moderner Produktdokumentation und hochwertigem Editorial Design statt an einer naturromantischen Kräuteroptik.</p></div></div></section>
+<section class="section" id="hinweis"><div class="wrap"><div class="statement"><h3>Hinweis zur Einordnung</h3><p>Die vorgestellten Produkte sind Konzepte und keine zugelassenen Arzneimittel. Beschreibungen stellen keine nachgewiesenen medizinischen Wirkungen oder Anwendungsempfehlungen dar. Die Inhaltsstofflisten dokumentieren die vorgesehenen Bestandteile, nicht deren Sicherheit oder Eignung. Insbesondere ätherische Öle und hautreizende Pflanzenstoffe können Reizungen oder allergische Reaktionen auslösen. Keine Herstellung oder Anwendung ohne fachkundige Prüfung.</p></div></div></section></main>
+<footer><div class="wrap"><span>MEDICA BOTANICA</span><span>BOTANICAL PREPARATIONS / CONCEPT PROJECT</span></div></footer></body></html>
